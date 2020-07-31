@@ -1,0 +1,29 @@
+.iconos_redes {
+    margin-top: 40px;
+   
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.iconos_redes ul{
+    
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-around
+}
+
+
+.iconos_redes ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.copi {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}

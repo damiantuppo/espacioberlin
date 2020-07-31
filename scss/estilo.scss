@@ -1,0 +1,33 @@
+@import 'generales';
+@import 'grid';
+@import 'menu';
+@import 'ventas';
+@import 'formulario';
+@import 'footer';
+@import 'lateral';
+
+
+.contenedor .main .alambre {
+    height: auto;
+    width: 140%;
+    min-width: 400px;
+    min-height: 700px;
+    max-height: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;   
+}
+
+.main .sagora {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    font-family: 'Piedra', cursive; 
+}
+.main .sagora img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,151 @@
+* {
+ margin: 0;
+ padding: 0;
+    
+}
+
+.body{
+    
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.fondo {
+    
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    background-color: #A3D6DB;
+    width: 100%;
+    left: 0px;
+    height: 100%;
+    animation: fondo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.sol{
+    background-color: #FFA500;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -110px;
+    top:30%;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px 2px rgba(210,140,0,0.5);
+    animation: sol;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+}
+
+.nubes {
+    
+    background-image:url(../multimedia/nubesnoche.png);
+    position: absolute;
+    background-repeat: repeat-x;
+    top: 10%;
+    left; 0px;
+    width: 100%;
+    height: 174px;
+    animation: nubes;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation animation-duration: infinite;
+    z-index: 100;
+}
+
+.ciudad {
+    
+    background-image:url(../multimedia/ciudad.png);
+    position: absolute;
+    background-repeat: repeat-x;
+    background-position: 0px 100%;
+    top: 10%;
+    left; 0px;
+    width: 100%;
+    height: 90%;
+    animation: ciudad;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation animation-duration: infinite;
+    z-index: 100;
+}
+
+.guitar {
+    background-image: url(../multimedia/guitarrista.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    bottom: 4%;
+    left: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: inline-block;
+    z-index: 100;
+}
+
+
+@keyframes sol{
+    
+    0% { 
+        left: -110px; 
+        top: 30%; } 
+    50% { left: 50%;
+          top: 5%;
+          background: #FF4500; } 
+    100%{ left: 100%; top: 30%; background: #bee2e6; box-shadow: 0px 0px 0px 2px rgba(73,90,95,0.5); } 
+    
+}
+
+@keyframes fondo{
+    
+    50%{ background-color: #A3D6DB; }
+    100%{ background-color: #103d42; }
+}
+@keyframes nubes{
+    from{ background-position: 0 0; }
+    to{ background-position: 100% 0; }    
+    }
+ 
+.entrar{
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 47vw;
+    color: black;
+    background-color: rgba(0,0,0,0);
+    z-index: 200;
+}
+.entrar button {
+    color: red;
+    font-size: 50px;
+    border: 1.5px solid #DC5404;
+    padding: 0px 30px 10px 30px;
+    
+    text-decoration: none;
+   font-family: 'Roboto Slab', serif;
+    background-color: rgba(0,0,0,0);
+    opacity: 70%;
+    
+}
+.entrar a{
+    color: #DC5404;
+    text-decoration: none;
+    
+}
+
+.title {
+    position: absolute;
+    z-index: 200;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(0,0,0,0);
+    margin-left: 27vw;
+    color: #DC5404;
+    opacity: 80%;
+    border: 1.5px solid #DC5404;
+    padding: 0px 30px 10px 30px;
+}

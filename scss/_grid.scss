@@ -1,0 +1,82 @@
+.contenedor {
+    
+    max-width: 1600px; 
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+                         "main main lateral"
+                         "widget-1 widget-2 lateral"
+                         "footer footer footer";
+}
+
+.contenedor div,
+.contenedor .header,
+.contenedor .main,
+.contenedor .sidebar,
+.contenedor .footer {
+  
+   
+    border-radius: 5px; 
+}
+
+.contenedor .header {
+    grid-area: header;
+}
+
+.contenedor .main {
+    padding-left: 10px;
+    grid-area: main;
+    min-height: 800px;
+    font-family: 'Piedra', cursive;  
+}
+
+
+
+.contenedor .lateral {
+    
+    grid-area: lateral;
+    color: white;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    height: 30px;
+    /*toda la porqueria que sigue la hago para centrar el texto en el contenedor*/
+    text-align: center;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+}
+.contenedor .widget-2 {
+    grid-area: widget-2;
+}
+.contenedor .footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1000px){
+    .contenedor {
+         grid-template-areas: "header header header"
+                         "main main main"
+                         "lateral lateral lateral"
+                         "widget-1 widget-1 widget-2"
+                         "footer footer footer";
+    }
+}
+@media screen and (max-width: 640px){
+    .contenedor {
+         grid-template-areas: "header header header"
+                         "main main main"
+                         "lateral lateral lateral"
+                         "widget-1 widget-1 widget-1"
+                         "widget-2 widget-2 widget-2"
+                         "footer footer footer";
+    }
+}

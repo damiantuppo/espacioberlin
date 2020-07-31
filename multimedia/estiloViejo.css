@@ -1,0 +1,558 @@
+* {
+ margin: 0;
+ padding: 0;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+	height: auto;
+	background-color: #D9D9D9;
+    background-image: linear-gradient(#ABB2B9,#1B2631 ); 
+} 
+
+/*******************ESTRUCTURA DE LA PAGINA!!!*************************/
+/*******************GRID*************************/
+.contenedor {
+    /*width: 90%; /*ancho del contenedor*/
+    max-width: 1600px; /*ancho max del contenedor*/
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);/*Cantidad de columnas, tamaño*/
+    grid-template-rows: repeat(4, auto);/*Cantidad de filas, tamaño*/
+    grid-template-areas: "header header header"
+                         "main main lateral"
+                         "widget-1 widget-2 lateral"
+                         "footer footer footer";
+}
+
+.contenedor div,
+.contenedor .header,
+.contenedor .main,
+.contenedor .sidebar,
+.contenedor .footer {
+  /*  background: black;*/
+   
+    border-radius: 5px; 
+}
+
+.contenedor .header {
+    grid-area: header;
+}
+
+.contenedor .main {
+    padding-left: 10px;
+    grid-area: main;
+    min-height: 800px;
+    font-family: 'Piedra', cursive;  
+}
+
+
+
+.contenedor .lateral {
+    
+    grid-area: lateral;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background: black;
+    color: white;
+    height: 120px;
+    /*toda la porqueria que sigue la hago para centrar el texto en el contenedor*/
+    text-align: center;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+}
+.contenedor .widget-2 {
+    grid-area: widget-2;
+}
+.contenedor .footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1000px){
+    .contenedor {
+         grid-template-areas: "header header header"
+                         "main main main"
+                         "lateral lateral lateral"
+                         "widget-1 widget-1 widget-2"
+                         "footer footer footer";
+    }
+}
+@media screen and (max-width: 640px){
+    .contenedor {
+         grid-template-areas: "header header header"
+                         "main main main"
+                         "lateral lateral lateral"
+                         "widget-1 widget-1 widget-1"
+                         "widget-2 widget-2 widget-2"
+                         "footer footer footer";
+    }
+}
+/*****************FIN DEL GRID****************/
+
+
+
+/*****************MENU****************/
+/*NOTA: ya esta responsive*/
+header{
+	width: 100%;
+	background-color: black;
+
+}
+#btn-menu {
+	display: none;
+}
+
+header label {
+	display: none;
+	width: 40px;
+	height: 40px;
+	padding: 1px;
+	border-right: 0px solid #fff;
+}
+
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+	/*color: black;*/
+    margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex; 
+}
+
+.menu li {
+    color: black;
+    font-size: 40px;
+	text-align: center;
+	flex-grow: 1;
+	border-right: 1px solid #fff;
+}
+
+.menu li:hover {
+	background: rgba(0,0,0,0.4);
+}
+
+.menu li a {
+	display: block;
+    font-family: 'Piedra', cursive;
+    font-size: 19px;
+    color: navajowhite;
+	padding: 15px 20px;
+    text-decoration: none;
+    background-color: black;
+    border: 0px;
+}
+
+.menu li button{
+    border: 0px;
+}
+
+@media (max-width:640px) {
+
+	header label {
+		display: block;
+	}
+
+	.menu {
+		position: absolute;
+		background: black ;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.8s;
+        z-index: 500;
+	}
+
+	.menu ul {
+		flex-direction: column;
+	}
+
+	.menu li {
+		border-top:  1px solid black;
+	}
+
+	#btn-menu:checked ~ .menu {
+		margin: 10px 0px 0px 0px;
+	}
+}
+/****************FIN DEL MENU******************/
+
+
+/**Video que esta en "streaming"----> mejorar responsive**/
+.contenedor .main .alambre {
+    height: 90%;
+    width: 90%;
+    min-width: 400px;
+    min-height: 400px;
+    max-height: 700px;
+    
+    /*¿?¿?¿?*/
+    text-align: center;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+    
+}
+
+.main .sagora {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    font-family: 'Piedra', cursive; 
+}
+.main .sagora img {
+    width: 100%;
+    height: 100%;
+}
+
+/***********************GRID VENTAS*******************************/
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 7fr 1fr 7fr 1fr 7fr;
+    grid-gap: 2px;
+    grid-template-areas: 
+        "guitarra             fotosguitar"
+        "consultaguitar       fotosguitar"
+        "bajos                fotosbajos"
+        "consultabajos        fotosbajos"
+        "accesorios           fotosaccesorios"
+        "consultaaccesorios   fotosaccesorios";
+    grid-column-gap: 5px;
+    margin-top:10px;
+    margin-bottom:50px;
+}
+
+.fotosguitar { 
+    grid-area: fotosguitar;
+    background-image: url(multimedia/guitarra.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+}
+
+.guitarra { 
+    grid-area: guitarra;
+    background-color:  #566573;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.consultaguitar { 
+    grid-area: consultaguitar;
+    background: #989B9E ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.fotosbajos { 
+    grid-area: fotosbajos; 
+    background-image: url(multimedia/bajo.jfif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.bajos { 
+    grid-area: bajos;
+    background-color:  #566573;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.consultabajos { grid-area: consultabajos;
+    background-color:  #989B9E ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.accesorios { grid-area: accesorios;
+    background-color:  #566573;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.consultaaccesorios { grid-area: consultaaccesorios; 
+    background-color:  #989B9E ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.fotosaccesorios { grid-area: fotosaccesorios;
+    background-image: url(multimedia/accesorios.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+/**********************FIN GRID VENTAS******************************/
+
+
+
+
+/**********************FORMULARIO VENTAS****************************/
+.formulario {
+    font-family: monospace;
+}
+
+.contactate {
+    margin-bottom: 20px;
+    font-family: serif;
+}
+/********************FIN FORMULARIO VENTAS**************************/
+
+
+
+
+
+/******************************FOOTER*******************************/
+.iconos_redes {
+    margin-top: 40px;
+   
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.iconos_redes ul{
+    
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-around
+}
+
+
+.iconos_redes ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.copi {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+/****************************FIN FOOTER***************************/
+
+
+
+
+/****************************old FOOTER***************************
+*************************Ahora es el lateral**********************/
+/*NOTA: tiene BOOTSTRAP*//*
+.multipista {
+  background-image: url(multimedia/logo.jpg); 
+  background-color: #FADBD8;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+} 
+
+.lives {
+  background-image: url(multimedia/recital.jpg);
+  background-color: #F5B7B1;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pistas {
+  background-image: url(multimedia/cantante.jpg);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.tonalidad {
+  background-image: url(multimedia/partitura.jpg);
+  background-color: #B03A2E;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.produccion {
+  background-image: url(multimedia/guitar.jpg);
+  background-color: #78281F;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.grabaciones {
+  background-image: url(multimedia/mic.jpg);
+  background-color: #4D100A;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain; 
+
+}
+*/
+/**************************FIN DEL LATERAL************************/
+
+    
+   
+ /****************************old FOOTER***************************
+*************************Ahora es el lateral**********************/
+#headingOne {
+    background-color: #373737;
+    color: black;
+    text-decoration: none;
+}
+#headingOne h2 button{
+    
+    color: #F4F4F4;
+    text-decoration: none;
+}
+#collapseOne {
+    background-color: #C0B283;
+}
+    
+#headingTwo {
+    background-color: #373737;
+    color: black;
+    text-decoration: none;
+}
+#headingTwo h2 button{
+    
+    color: #F4F4F4;
+    text-decoration: none;
+}
+#collapseTwo {
+    background-color: #C0B283;
+}
+
+#headingThree {
+    background-color: #373737;
+    color: black;
+    text-decoration: none;
+}
+#headingThree h2 button{
+    
+    color: #F4F4F4;
+    text-decoration: none;
+}
+#collapseThree {
+    background-color: #C0B283;
+}
+
+
+
+
+
+#headingFour {
+    background-color: #373737;
+    color: black;
+    text-decoration: none;
+}
+#headingFour h2 button{
+    
+    color: #F4F4F4;
+    text-decoration: none;
+}
+#collapseFour {
+    background-color: #C0B283;
+}
+
+#headingFive {
+    background-color: #373737;
+    color: black;
+    text-decoration: none;
+}
+#headingFive h2 button{
+    
+    color: #F4F4F4;
+    text-decoration: none;
+}
+#collapseFive {
+    background-color: #C0B283;
+}
+
+#headingSix {
+    background-color: #373737;
+    color: black;
+    text-decoration: none;
+}
+#headingSix h2 button{
+    
+    color: #F4F4F4;
+    text-decoration: none;
+}
+#collapseSix {
+    background-color: #C0B283;
+    
+}
+
+
+.portada {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 70px; !important;
+}
+    
+.presentacion{
+    
+     font-family: 'Piedra', cursive;
+    
+}
+
+.card-body {
+    background-color: black;
+    color: aliceblue;
+}
+/**************************FIN DEL LATERAL************************/

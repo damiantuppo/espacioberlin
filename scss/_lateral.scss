@@ -1,0 +1,46 @@
+/*Usando BEM*/
+.lateral__acordion__caja{
+    background-color: #373737;
+    text-decoration: none;
+}
+
+.lateral__acordion__boton {
+    color: #F4F4F4;
+    text-decoration: none;
+    
+}
+
+.lateral__acordion__texto{
+    background-color: #C0B283;
+    text-decoration: none;
+}
+
+.ensaya{
+    
+    color: white;
+}
+
+.gif {
+    
+    margin-left: 40px;
+}
+
+.portada {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 70px; 
+}
+    
+.presentacion{
+    
+     font-family: 'Piedra', cursive;
+    
+}
+
+.card-body {
+    background-color: black;
+    color: aliceblue;
+}

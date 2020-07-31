@@ -1,0 +1,67 @@
+
+Utilizar sass: 
+0) instalar npm y el node js (esto se hace una sola vez en la pc y punto)
+
+Para agregar al proyecto:
+1)En la consola, iniciar en npm (npm init)
+2)Enter enter enter enter....
+3)Instalar el nodemon (npm install node-sass nodemon) 
+4)Agregar las lineas al package.json
+
+"build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+(estas lineas van separadas por comas)
+
+entiendo que cada vez que estras al proyecto y vas a editar el sass hay que abrir la consola y desde la carpeta del proyecto ejecutar "npm run watch-css" (sin comillas amigue)
+
+
+
+Buscar imagenes svgs
+
+
+Menu:
+multimedia/menu40x33.png
+
+
+Main:
+multimedia/retro2.jpg
+multimedia/retro.jpg
+multimedia/retro3.jpg
+
+multimedia/flyer2.jpg
+
+multimedia/flyer.jpg
+
+multimedia/bcrich3.jpg
+multimedia/parquer5.jpg
+multimedia/tyler_beige2.jpg
+multimedia/michaelkelly8.jpg
+multimedia/doh3.jpg
+multimedia/ltd4.jpg
+multimedia/michaelkelly1.jpg
+
+
+multimedia/portada.jpg
+
+
+Lateral:
+multimedia/bajo.jfif
+multimedia/recital.jpg
+multimedia/cantante.jpg
+multimedia/partitura.jpg
+multimedia/guitar.jpg
+multimedia/mic.jpg
+
+Footer:
+multimedia/whatsapp.png
+multimedia/youtube.png
+multimedia/instagram.png
+multimedia/Gmail_icon-icons.com_66934.png
+multimedia/pin_mark.png
+
+
+CSS:
+multimedia/guitarra.jpg
+multimedia/bajo.jfif
+multimedia/accesorios.jpg
