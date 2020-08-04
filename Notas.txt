@@ -1,4 +1,4 @@
-
+aca modifico para el git nomas perri
 Utilizar sass: 
 0) instalar npm y el node js (esto se hace una sola vez en la pc y punto)
 
