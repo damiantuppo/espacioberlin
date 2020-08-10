@@ -6,12 +6,11 @@ body {
   font-family: 'Roboto', sans-serif;
   width: auto;
   height: auto;
-  background-color: #D9D9D9;
-  background-image: linear-gradient(#ABB2B9, #1B2631); }
+  background-color: black; }
 
 .indeximg {
-  height: 70%;
-  width: 100%;
+  height: 50%;
+  width: 70%;
   margin-top: 130px; }
 
 #video1 {
@@ -33,7 +32,8 @@ body {
   margin-top: 70px; }
 
 .presentacion {
-  font-family: 'Advent Pro'; }
+  font-family: 'Teko', sans-serif;
+  color: #FBFCFC; }
 
 .card-body {
   background-color: black;
@@ -58,6 +58,11 @@ body {
   margin: 5px;
   height: 500px; }
 
+.titulo {
+  font-family: 'Teko', sans-serif;
+  font-size: 70px;
+  color: white; }
+
 .imgafter {
   width: 300px;
   border-radius: 40px 107px 0px 200px;
@@ -71,6 +76,69 @@ body {
   background-size: cover;
   background-attachment: fixed;
   opacity: 130%; }
+
+.portada {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+.presentacion {
+  justify-content: center;
+  font-family: 'Teko', sans-serif !important;
+  font-size: 30px;
+  padding-top: 30px;
+  margin-top: 100px;
+  margin-bottom: 145px; }
+
+.parrafo {
+  margin-top: 120px;
+  margin-bottom: 0px;
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+  color: white; }
+
+.ventasdiseno h1 {
+  color: white;
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: 'Teko', sans-serif; }
+
+.ventasdiseno p {
+  color: white;
+  font-size: 25px;
+  margin-top: 50px;
+  font-family: 'Teko', sans-serif; }
+
+.main-streaming {
+  color: aliceblue; }
+
+.videoresponsive {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  padding-top: 30px;
+  /* IE6 workaround*/
+  height: 0;
+  overflow: hidden; }
+
+.videoresponsive iframe,
+.videoresponsive object,
+.videoresponsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.contendormain {
+  margin-top: 100px;
+  font-size: 25px; }
+
+.contendormain h5 {
+  font-size: 30px; }
 
 .contenedor {
   max-width: 1600px;
@@ -95,11 +163,10 @@ body {
   padding-left: 10px;
   grid-area: main;
   min-height: 800px;
-  font-family: 'Piedra', cursive; }
+  font-family: 'Teko', sans-serif; }
 
 .contenedor .lateral {
-  grid-area: lateral;
-  color: white; }
+  grid-area: lateral; }
 
 .contenedor .widget-1,
 .contenedor .widget-2 {
@@ -117,6 +184,7 @@ body {
   grid-area: widget-2; }
 
 .contenedor .footer {
+  margin-top: 100px;
   grid-area: footer; }
 
 @media screen and (max-width: 1000px) {
@@ -206,7 +274,7 @@ header label:hover {
   background-image: url(../multimedia/mic.jpg);
   background-size: 100vw 100vh;
   background-attachment: fixed;
-  margin-top: 500px; }
+  margin-top: 100px; }
 
 .formulario form {
   width: 600px;
@@ -272,6 +340,9 @@ header label:hover {
   justify-content: center;
   align-items: center; }
 
+.blanco {
+  color: white; }
+
 /*Usando BEM*/
 .lateral__acordion__caja {
   background-color: #373737;
@@ -291,6 +362,12 @@ header label:hover {
 .gif {
   margin-left: 40px; }
 
+.lateral_nosotros {
+  color: #FBFCFC;
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-top: 30px; }
+
 .portada {
   display: flex;
   align-content: center;
@@ -305,6 +382,21 @@ header label:hover {
 .card-body {
   background-color: black;
   color: aliceblue; }
+
+/*.lateral .contenedor_lat {
+    position:relative;
+    top: 0;
+    min-height: 120px;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 200px;
+    padding-left: 30px;
+}*/
+.lateral .contenedor_lat {
+  width: 100%;
+  text-align: center;
+  padding-left: 30px; }
 
 .contenedor .main .alambre {
   height: auto;

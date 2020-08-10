@@ -30,7 +30,7 @@
     padding-left: 10px;
     grid-area: main;
     min-height: 800px;
-    font-family: 'Piedra', cursive;  
+    font-family: 'Teko', sans-serif; 
 }
 
 
@@ -38,7 +38,7 @@
 .contenedor .lateral {
     
     grid-area: lateral;
-    color: white;
+    
 }
 
 .contenedor .widget-1,
@@ -58,6 +58,7 @@
     grid-area: widget-2;
 }
 .contenedor .footer {
+    margin-top: 100px;
     grid-area: footer;
 }
 
