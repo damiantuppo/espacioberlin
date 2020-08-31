@@ -1,3 +1,5 @@
+@import 'colores';
+
 * {
  margin: 0;
  padding: 0;
@@ -8,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: auto;
 	height: auto;
-	background-color: black;
+	background-color: $oscuro;
    
 } 
 
@@ -41,12 +43,12 @@ body {
     
 .presentacion{
 font-family: 'Teko', sans-serif;
-    color: #FBFCFC;
+    color: $claro;
 }
 
 .card-body {
-    background-color: black;
-    color: aliceblue;
+    background-color: $oscuro;
+    color: $claro;
 }
 
 .main .cursos {
@@ -64,32 +66,32 @@ font-family: 'Teko', sans-serif;
 }
 
 .main__cursos__tipodecurso {
-    color: #979A9A  ;
+    color: $claro;
     width: 400px;
     margin: 5px;
     height: 500px;
 }
-
-.titulo { 
-    font-family: 'Teko', sans-serif;
-    font-size: 70px;
-    color: white;
-   
-    
-    
-    
+.main__cursos__tipodecurso h2{
+    font-size: 55px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
+.main__cursos__tipodecurso p{
+   font-size: 30px; 
+}
+
 .imgafter {
     width: 300px;
     border-radius: 40px 107px 0px 200px;
     border-radius: 40px 107px 0px 200px;
     border-radius: 40px 107px 0px 200px;
-    border: 0px solid #000000;
+    border: 0px solid $oscuro;
 }
 
 .bodyimg {
     
- background-image: url(../multimedia/vinilo.jpg)  !important;  
+ background-image: url($fondo_img)  !important;  
  background-position: center;
  background-size: cover;
  background-attachment: fixed;
@@ -122,28 +124,25 @@ font-family: 'Teko', sans-serif;
     margin-bottom: 0px;
     font-family: 'Teko', sans-serif;
     font-size: 30px;
-    color: white;
+    color: $claro;
 }
 
 .ventasdiseno h1 {
-   color: white;
+   color: $claro;
     font-size: 50px;
     margin-top: 50px;
     font-family: 'Teko', sans-serif;
-    
-    
 }
 
 .ventasdiseno p {
-    color: white;
+    color: $claro;
     font-size: 25px;
     margin-top: 50px;
     font-family: 'Teko', sans-serif;
-    
 }
 
 .main-streaming{
-    color: aliceblue;
+    color: $claro;
 }
 
 .videoresponsive {
@@ -173,3 +172,58 @@ height: 100%;
 .contendormain h5 {
     font-size: 30px;
 }
+
+
+.titulo { 
+    //display: flex;
+    margin-bottom: 100px;
+}
+.titulo_h1 { 
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+    color: $claro;
+    margin-left: 300px;
+    margin-top: -220px;
+    font-size: 100px;
+}
+.titulo_hr {
+    border-color: $claro;
+    margin-top: -10px;
+    max-width: 508px;
+    margin-left: 300px;
+}
+.titulo_img {
+    margin-top: -10px;
+    margin-left: -100px;
+}
+
+@media (max-width:640px) {
+
+	.titulo_img {
+        margin-left: -70%;
+   }
+    .titulo_h1 { 
+        margin-left: 0px;
+   }
+    .titulo_hr {
+        margin-left: 0px;
+    }
+}
+
+.ubicacion{
+    width: 100%;  
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+.ubicacion_frame{
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+}
+
+

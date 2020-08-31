@@ -1,3 +1,6 @@
+@import 'colores';
+
+
 .formulario  {
     background-image: url(../multimedia/mic.jpg);
     background-size: 100vw 100vh;
@@ -17,7 +20,7 @@
 }
 
 .formulario  h2 {
-    color: #fff;
+    color: $fh2;
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -43,7 +46,7 @@
 
 #boton {
     background: #31384A;
-    color: #fff;
+    color: $fboton;
     padding: 20px;
 }
 

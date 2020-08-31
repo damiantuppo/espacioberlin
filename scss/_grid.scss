@@ -1,3 +1,6 @@
+@import 'colores';
+
+
 .contenedor {
     
     max-width: 1600px; 
@@ -44,7 +47,7 @@
 .contenedor .widget-1,
 .contenedor .widget-2 {
     height: 30px;
-    /*toda la porqueria que sigue la hago para centrar el texto en el contenedor*/
+    /*todo lo que sigue lo hago para centrar el texto en el contenedor*/
     text-align: center;
     display: flex;
     align-items: center;    

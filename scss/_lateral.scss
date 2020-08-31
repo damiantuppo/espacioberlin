@@ -1,23 +1,26 @@
+@import 'colores';
+
+
 /*Usando BEM*/
 .lateral__acordion__caja{
-    background-color: #373737;
+    background-color: $caja;
     text-decoration: none;
 }
 
 .lateral__acordion__boton {
-    color: #F4F4F4;
+    color: $boton;
     text-decoration: none;
     
 }
 
 .lateral__acordion__texto{
-    background-color: #C0B283;
+    background-color: $texto;
     text-decoration: none;
 }
 
 .ensaya{
     
-    color: white;
+    color: $claro;
 }
 
 .gif {
@@ -27,7 +30,7 @@
 
 .lateral_nosotros {
     
-    color: #FBFCFC;
+    color: $claro;
     margin-top: 100px;
     padding-left: 100px;
     padding-top: 30px;
@@ -49,8 +52,8 @@
 }
 
 .card-body {
-    background-color: black;
-    color: aliceblue;
+    background-color: $oscuro;
+    color: $claro;
 }
 
 /*.lateral .contenedor_lat {
@@ -67,7 +70,5 @@
    
     width: 100%;
     text-align: center;
-    
-   
     padding-left: 30px;
 }

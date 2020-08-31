@@ -1,6 +1,7 @@
+@import 'colores';
+
 .iconos_redes {
     margin-top: 40px;
-   
     align-content: center;
     text-align: center;
     justify-content: center;
@@ -29,5 +30,5 @@
 }
 
 .blanco {
-    color: white;
+    color: $claro;
 }

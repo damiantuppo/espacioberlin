@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   width: auto;
   height: auto;
-  background-color: #D3E1E1; }
+  background-color: black; }
 
 .indeximg {
   height: 50%;
@@ -33,11 +33,11 @@ body {
 
 .presentacion {
   font-family: 'Teko', sans-serif;
-  color: black; }
+  color: white; }
 
 .card-body {
-  background-color: #D3E1E1;
-  color: black; }
+  background-color: black;
+  color: white; }
 
 .main .cursos {
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ body {
   justify-content: space-between; }
 
 .main__cursos__tipodecurso {
-  color: black;
+  color: white;
   width: 400px;
   margin: 5px;
   height: 500px; }
@@ -72,10 +72,10 @@ body {
   border-radius: 40px 107px 0px 200px;
   border-radius: 40px 107px 0px 200px;
   border-radius: 40px 107px 0px 200px;
-  border: 0px solid #D3E1E1; }
+  border: 0px solid black; }
 
 .bodyimg {
-  background-image: url("../multimedia/vinilo_blanco.jpg") !important;
+  background-image: url("../multimedia/vinilo.jpg") !important;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -101,22 +101,22 @@ body {
   margin-bottom: 0px;
   font-family: 'Teko', sans-serif;
   font-size: 30px;
-  color: black; }
+  color: white; }
 
 .ventasdiseno h1 {
-  color: black;
+  color: white;
   font-size: 50px;
   margin-top: 50px;
   font-family: 'Teko', sans-serif; }
 
 .ventasdiseno p {
-  color: black;
+  color: white;
   font-size: 25px;
   margin-top: 50px;
   font-family: 'Teko', sans-serif; }
 
 .main-streaming {
-  color: black; }
+  color: white; }
 
 .videoresponsive {
   width: 100%;
@@ -150,13 +150,13 @@ body {
 .titulo_h1 {
   font-family: 'Teko', sans-serif;
   font-size: 70px;
-  color: black;
+  color: white;
   margin-left: 300px;
   margin-top: -220px;
   font-size: 100px; }
 
 .titulo_hr {
-  border-color: black;
+  border-color: white;
   margin-top: -10px;
   max-width: 508px;
   margin-left: 300px; }
@@ -247,7 +247,7 @@ body {
 
 header {
   width: 100%;
-  background-color: #D3E1E1; }
+  background-color: black; }
 
 #btn-menu {
   display: none; }
@@ -261,7 +261,7 @@ header label {
 
 header label:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0); }
+  background: rgba(0, 0, 0, 0.3); }
 
 .menu ul {
   /*color: black;*/
@@ -275,19 +275,19 @@ header label:hover {
   font-size: 40px;
   text-align: center;
   flex-grow: 1;
-  border-right: 1px solid black; }
+  border-right: 1px solid white; }
 
 .menu li:hover {
-  background: rgba(0, 0, 0, 0); }
+  background: rgba(0, 0, 0, 0.4); }
 
 .menu li a {
   display: block;
   font-family: 'Piedra', cursive;
   font-size: 19px;
-  color: black;
+  color: navajowhite;
   padding: 15px 20px;
   text-decoration: none;
-  background-color: #D3E1E1;
+  background-color: black;
   border: 0px; }
 
 .menu li button {
@@ -298,7 +298,7 @@ header label:hover {
     display: block; }
   .menu {
     position: absolute;
-    background: #D3E1E1;
+    background: black;
     width: 70%;
     margin-left: -70%;
     transition: all 0.8s;
@@ -306,7 +306,7 @@ header label:hover {
   .menu ul {
     flex-direction: column; }
   .menu li {
-    border-top: 1px solid #D3E1E1; }
+    border-top: 1px solid black; }
   #btn-menu:checked ~ .menu {
     margin: 10px 0px 0px 0px; } }
 
@@ -391,15 +391,15 @@ header label:hover {
   align-items: center; }
 
 .blanco {
-  color: black; }
+  color: white; }
 
 /*Usando BEM*/
 .lateral__acordion__caja {
-  background-color: black;
+  background-color: #373737;
   text-decoration: none; }
 
 .lateral__acordion__boton {
-  color: white;
+  color: #F4F4F4;
   text-decoration: none; }
 
 .lateral__acordion__texto {
@@ -407,13 +407,13 @@ header label:hover {
   text-decoration: none; }
 
 .ensaya {
-  color: black; }
+  color: white; }
 
 .gif {
   margin-left: 40px; }
 
 .lateral_nosotros {
-  color: black;
+  color: white;
   margin-top: 100px;
   padding-left: 100px;
   padding-top: 30px; }
@@ -430,8 +430,8 @@ header label:hover {
   font-family: 'Piedra', cursive; }
 
 .card-body {
-  background-color: #D3E1E1;
-  color: black; }
+  background-color: black;
+  color: white; }
 
 /*.lateral .contenedor_lat {
     position:relative;
